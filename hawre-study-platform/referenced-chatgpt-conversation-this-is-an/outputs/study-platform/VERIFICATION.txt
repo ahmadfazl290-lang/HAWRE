@@ -1,0 +1,30 @@
+Verified 2026-10-20
+
+Production build: passed.
+Core test suite: 5 tests passed (node --test tests/core.test.mjs).
+Original score compatibility: all four section scores matched the supplied
+App.jsx.txt across 100 answer sets. Original question and recommendation
+data was extracted directly from that file.
+
+Browser verification in Microsoft Edge:
+- All four assessment steps and all six question types.
+- Disabled Next until complete, including conditional q12 follow-up.
+- Refresh restored answers and the current step.
+- Report radar chart, printable student name, print layout and PDF generation.
+- Sharing excluded name and raw answers by default.
+- Seven plan days, completion state, hard check-in adjustment and refresh.
+- Focus timer completed once, including simulated clock advancement.
+- Flashcards, timetable and resolved mistakes survived refresh.
+- Dark mode, large text, backup download/import and scoped delete-all.
+- Mobile viewport 390px wide without horizontal page overflow.
+- Production service-worker offline reload retained a working app and plan.
+- No uncaught runtime errors during these flows.
+
+Additional storage checks passed for malformed/disabled storage, strict dates,
+duplicate IDs, long text, restored learning states and adaptation idempotence.
+Planner tests covered time budgets, work profiles, calendar boundaries and
+preserving completed task history.
+
+This release stores data in the browser. It has no account/backend, cross-device
+automatic synchronization, remote AI, analytics or automatic messaging.
+Source and a built dist/ are included; public hosting was not performed.

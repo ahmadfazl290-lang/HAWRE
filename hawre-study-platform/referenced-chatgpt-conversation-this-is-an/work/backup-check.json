@@ -1,0 +1,65 @@
+{
+  "application": "hawre-study",
+  "version": 2,
+  "assessment": {
+    "step": 0,
+    "answers": {},
+    "extraTexts": {},
+    "studentName": ""
+  },
+  "platform": {
+    "profile": {
+      "grade": "",
+      "subject": "",
+      "dailyMinutes": 30,
+      "environment": "shared",
+      "works": false,
+      "goal": ""
+    },
+    "plan": null,
+    "checkins": [],
+    "sessions": [
+      {
+        "id": "session-7d83731f-1acd-436b-988c-48f510b7305f",
+        "date": "2026-10-20",
+        "minutes": 1,
+        "subject": "خوێندنی گشتی"
+      }
+    ],
+    "attempts": [],
+    "tools": {
+      "flashcards": [
+        {
+          "id": "card-ad1cea7b-28fa-4996-a95b-1a50c0a25ed8",
+          "question": "٢ + ٢ = ؟",
+          "answer": "٤",
+          "subject": "",
+          "status": "known",
+          "createdAt": "2026-10-19T22:30:19.908Z"
+        }
+      ],
+      "mistakes": [
+        {
+          "id": "mistake-c8c0d4c0-9609-4b59-b69f-c811cc2efdd2",
+          "subject": "بیرکاری",
+          "question": "هەڵەی لەکۆکردنەوە",
+          "correction": "دووبارە ژمارەکان بپشکنە",
+          "resolved": true,
+          "createdAt": "2026-10-19T22:30:20.422Z"
+        }
+      ],
+      "timetable": [
+        {
+          "id": "schedule-723a1187-8c20-4ea6-9422-50fbbd8de610",
+          "day": "saturday",
+          "subject": "بیرکاری",
+          "time": "17:00"
+        }
+      ]
+    },
+    "preferences": {
+      "dark": true,
+      "largeText": true
+    }
+  }
+}
