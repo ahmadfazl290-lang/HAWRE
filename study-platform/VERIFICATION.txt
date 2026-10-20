@@ -1,0 +1,59 @@
+Release 4 — verification, 2026-10-20
+
+Localization checks added in release 4:
+- All four translated catalogs contain 767 nonempty messages with identical
+  source keys and exact placeholder multisets. English and Latin Kurmanji
+  catalogs contain no untranslated Sorani script.
+- All five languages across all eight application pages: language persistence,
+  document lang/dir, sidebar placement, font loading, mobile layout at390px,
+  offline reload and offline font loading. No uncaught application errors.
+- Authored free text stays verbatim even if it equals a UI translation key.
+  Generated subject/goal labels localize through source tags; tags survive
+  hydration and backups and clear when the student edits a field.
+- Kurmanji dates use a Latin fallback when browser Intl support is unavailable.
+- Original question data, learning-topic data, scoring and validation were
+  compared against release 3 and are unchanged (apart from line endings).
+- Shipped Node suite now has15 passing tests, including language/catalog,
+  template, authored-field roundtrip and date-fallback checks.
+- Browser: all four assessment sections in English, required/whitespace/
+  conditional validation, en→kmr→en switching with canonical answers retained;
+  raw student name, notes and free-text answers unchanged in report/export.
+- Browser: translated share preview/download, print controls hidden, canonical
+  support recipient retained en→fa; Persian backup restores language and data;
+  New Form removes assessment only and leaves unrelated browser storage intact.
+- Browser: full English learning path including simulated24h follow-up,
+  immutable first answers, hydration/offline and translated plan goal;
+  English→Kurmanji reading passage/prompts/choices retain the selected answer.
+- Browser: real archived v3 service worker upgraded to v4 with two tabs open;
+  both controllers updated, both tabs reloaded offline, the 52,524-byte Speda
+  font loaded from cache, and assessment/cards/language/unrelated storage were
+  preserved exactly. Unrelated caches survived the upgrade.
+
+Retained verification from release 3:
+
+Completed checks:
+- Production bundle and styles build.
+- Core suite: 7 tests for required inputs, fair-score invariance, plan budgets,
+  support-cause branching, valid question keys, delayed follow-up, backups/reset.
+- Independent review: all 20 numerical exercise keys evaluated; reading answer
+  keys checked against their passages. Generic content still awaits teacher
+  review for any specific school curriculum.
+- Storage roundtrips: learning stages and immutable first attempts, flashcard
+  scheduling, mistake reattempts, support reasons and scoring-version migration.
+- Browser: complete baseline/example/guided/independent/reflection/followup path;
+  delayed check unlocked after a simulated 24h; first submissions stayed locked;
+  progress showed exercise evidence separately from study-time records.
+- Browser: all 4 original assessment sections; conditional follow-up; refresh;
+  private sharing defaults; printable student name and PDF generation.
+- Browser: plan completion/cause-specific check-ins; timer once-only completion;
+  cards/schedule/mistakes; dark/large text; JSON export/import and scoped deletion.
+- Browser: mobile layout at390px and working offline reload through production SW.
+- No uncaught application errors in tested flows.
+
+The shipped test suite can be rerun with npm test. Production build with npm run
+build. Prepared dist/ is included. No public deployment, account service, remote
+AI, automatic messaging or human student pilot was performed.
+
+Support-v2 is a transparent heuristic for self-reported support priorities, not
+a validated clinical instrument or a probability of a problem. Older snapshots
+remain labeled and are not compared numerically across scoring versions.
